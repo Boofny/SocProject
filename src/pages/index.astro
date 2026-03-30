@@ -1,9 +1,40 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
+const stockImg = "https://media.istockphoto.com/id/1987630154/photo/a-black-and-white-luxury-home-with-a-sunset.jpg?s=612x612&w=0&k=20&c=zGERIVpfMD6NsKc5WsYfReNz6Wj0nJuDOYmt93NA43k="
 ---
 
 <Layout>
+  <div class="w-full flex justify-center flex-col">
+    <div class="w-full flex justify-center">
+      <div class="w-full text-white bg-gray-800 flex justify-center items-center">
+        <p>Intro</p>
+        <h1></h1>
+      </div>
+      <div class="w-full border">
+        <img src={stockImg}
+             alt="background"
+             class="w-full object-fill"
+             >
+      </div>
+    </div>
+    <div class="w-full flex justify-center">
+      <div class="h-full w-1/2 m-10 mt-15 text-lg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h1>This is an image of a house</h3>
+        <img class="my-5" src={stockImg} alt="">
+      </div>
+    </div>
+  </div>
 </Layout>
 
+<style>
+h1{
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+</style>

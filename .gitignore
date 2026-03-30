@@ -1,5 +1,6 @@
 # build output
 dist/
+checklist.md
 
 # generated types
 .astro/
