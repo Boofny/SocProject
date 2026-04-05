@@ -5,11 +5,17 @@ const stockImg = "https://images.unsplash.com/photo-1584169417032-d34e8d805e8b?q
 <Layout>
   <div class="w-full flex justify-center flex-col">
     <div class="w-full flex justify-center">
-      <div class="w-full text-gray-200 bg-gray-800 flex p-10 justify-center items-center flex-col font-header ">
-        <h1>What are AI data centers?<br>And why should you care about it?</h1>
-        <p>stock text: somthing like anylyzig or sum</p>
+      <div class="w-full text-gray-200 bg-gray-800 flex p-4 justify-center items-center flex-col font-header ">
+        <!-- <hr/> -->
+        <div class="border-l-3 px-10 ml-5">
+          <h1 class="">What are AI data centers?<br>And why should you care about it?</h1>
+          <p class="pr-30">Explaining what AI data centers do and how they affect you.</p>
+          <hr>
+          <label class="w-full text-sm font-bold">By: Brandon.R, Devin.M, Hector.C and Kristin.G <br>April 24, 2026</label>
+        </div>
+        <!-- <hr/> -->
       </div>
-      <div class="w-full border">
+      <div class="w-full">
         <img src={stockImg}
              alt="background"
              class="w-full object-fill"
@@ -21,6 +27,7 @@ const stockImg = "https://images.unsplash.com/photo-1584169417032-d34e8d805e8b?q
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <h1>This is an image of a house</h3>
+        <h2>no</h2>
         <img class="my-5" src={stockImg} alt="">
       </div>
     </div>
@@ -32,6 +39,15 @@ h1{
   font-size: 46px;
   font-weight: bold;
   margin-top: 10px;
+}
+h2{
+  font-size: 46px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+hr{
+  color: white;
+  width: 90%;
 }
 
 </style>

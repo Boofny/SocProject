@@ -1,24 +1,28 @@
 ---
-
+const icon = "https://cdn-icons-png.flaticon.com/128/2602/2602412.png"
 ---
 
-<header class="bg-gray-800 shadow-lg flex justify-center border-b border-gray-500 ">
-  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
-      <!-- Logo/Brand Section -->
-      <div class="shrink-0">
-        <a href="/" class="text-white text-2xl font-bold">
-          Logo
+<header class="bg-gray-800 border-b border-gray-500 relative">
+  <nav class="mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative flex items-center justify-center h-16 w-full">
+
+      <!-- Logo pinned to the left -->
+      <a href="/" class="absolute left-0 flex items-center shrink-0 ">
+        <div class="w-12 h-12 rounded-lg bg-gray-200 flex items-center justify-center">
+          <img src={icon} class="w-10 h-10"/>
+        </div>
+      </a>
+
+      <!-- Nav truly centered -->
+      <div class="flex items-center gap-0.5">
+        <a href="/" class="relative text-gray-100 hover:bg-white/[0.06] hover:text-white px-3.5 py-1.5 text-lg">
+          Home
+        </a>
+        <a href="/about" class="relative text-gray-100 hover:bg-white/[0.06] hover:text-white px-3.5 py-1.5 text-lg font-medium">
+          About
         </a>
       </div>
-      
-      <!-- Navigation Links -->
-      <div class="hidden md:block">
-        <div class="ml-10 flex items-baseline space-x-4">
-          <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-          <a href="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
-        </div>
-      </div>
+
     </div>
   </nav>
 </header>
