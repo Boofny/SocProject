@@ -85,10 +85,6 @@ input {
 table {
 	width: 100%;
 }
-img {
-	/* max-width: 100%; */
-	/* height: auto; */
-}
 code {
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-dark));
@@ -154,7 +150,7 @@ blockquote {
 
 .prose img{
   /* width: 100%; */
-  border-radius: 5px;
+  /* border-radius: 5px; */
   /* border: 1px solid var(--border); */
 }
 
