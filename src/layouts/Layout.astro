@@ -8,23 +8,29 @@ import Footer from '../components/Footer.astro'
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<!-- <link rel="icon" href="/favicon.ico" /> -->
+		<link rel="icon" type="image/png" href="/ICON.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Explaining AI Data Centers</title>
 	</head>
 	<body>
     <Header></Header>
-		<slot />
+		  <slot />
     <Footer></Footer>
 	</body>
 </html>
 
 <style>
-	html,
+  html{
+    height: 100%;
+  }
 	body {
 		margin: 0;
 		width: 100%;
-		height: 100%;
+		min-height: 100%;
+    display: flex;
+    flex-direction: column;
 	}
+  main{
+    flex: 1;
+  }
 </style>
