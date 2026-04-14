@@ -1,6 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const stockImg = "https://images.unsplash.com/photo-1584169417032-d34e8d805e8b?q=80&w=2018&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+const NJArticle = "https://policylab.rutgers.edu/publication/electricity-bills-and-ai-data-centers/"
+const IBMArticle = "https://www.ibm.com/think/topics/ai-data-center"
+const graph = "https://substackcdn.com/image/fetch/$s_!C89t!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe9d5e10e-e182-4573-8ccf-6ebe13aa03e4_1320x465.png"
+const graphArticle = "https://moneymoves.substack.com/p/whats-up-with-electricity-prices"
+const centerImage = "https://blogs.microsoft.com/wp-content/uploads/2025/09/OMB-Image-1-Datacenter.jpg"
+const centerArticle = "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/"
 ---
 
 <Layout>
@@ -26,31 +32,37 @@ const stockImg = "https://images.unsplash.com/photo-1584169417032-d34e8d805e8b?q
     </div>
     <div class="w-full flex justify-center">
       <div class="w-11/12 md:w-1/2 m-10 mt-10 text-lg">
-        <h1 class="text-xl md:text-3xl font-header font-extrabold pb-2">What actually is an AI data center?</h1>
-        <p class="md:text-xl">AI data centers are described best by this <a href="https://www.ibm.com/think/topics/ai-data-center" class="text-blue-800 underline" target="_blank" rel="noopener noreferrer">IBM article</a>, “a facility that houses the specific IT infrastructure needed to train, deploy and deliver AI applications and services.”. Large data centers like this have been popping up all around the U.S in mass.</p>
-        <p class="md:text-xl">What does this mean for you?</p>
-        <!-- <p class="md:text-xl">do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
-        <h1 class="font-header text-2xl md:text-3xl">This is an image </h1>
-        <img class="my-5 rounded" src={stockImg} alt="">
+        <h2 class="text-xl md:text-3xl font-header font-extrabold pb-2">What actually is an AI data center?</h1>
+        <p class="md:text-xl">AI data centers are described best by this <a href={IBMArticle} class="text-blue-800 underline" target="_blank" rel="noopener noreferrer">IBM article</a>, “a facility that houses the specific IT infrastructure needed to train, deploy and deliver AI applications and services.”. Large data centers like this have been popping up all around the U.S in mass.</p>
+        <img class="rounded shadow-md" src={centerImage} alt="">
+        <p class="whitespace-pre text-xs md:text-sm pt-2 flex justify-center">Microsoft’s AI datacenter in Mt Pleasant, Wisconsin. Sep 18, 2025
+        <a class="text-blue-800 underline" href="https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/" target="_blank" rel="noopener noreferrer"> Scott Guthrie</a>
+        </p>
+        <p class="md:text-xl">What does this mean for you? Well it means that if you happen to live in close proximity to an AI data center then you're in for some higher energy bills. According to the <a target="_blank" rel="noopener noreferrer" class="text-blue-800 underline" href={NJArticle}>New Jersey state policy lab </a>electricity bills have a potential to reach over $122 dollars or up to 40% more per month compared to 2020 before the big AI boom, but how does an AI center actually cause electricity prices to rise? Well in most city, rural and suburban areas the residence depends on something called the grid, which is responsible for distributing power to various outlets so you can use it at your leisure. </p>
+        <p class="md:text-xl">Now if an AI data center is placed in your area then the ridiculous amount of energy needed to keep these centers operational means the demand for energy rises in your area causing the power plants to raise their prices in order to cover the amount of energy the AI data centers use.That in turn falls back on the average person making them pay more for their electricity bill despite not even doing anything to have it rise. Keep the lights off? Turn off your AC and live on as little power you can use? Doesn’t matter, the surging prices will still be felt even if you live fairly inexpensively.</p>
+        <h2 class="text-xl md:text-3xl font-bold font-header">Average rising price of electricity in the U.S.</h3>
+        <img class="mt-5 shadow-md rounded" src={graph} alt="">
+        <p class="whitespace-pre pt-2 text-sm flex justify-center"><a href={graphArticle} class="text-blue-800 underline" target="_blank" rel="noopener noreferrer">Alicia Adamczyk</a> (Sep 09, 2025)</p>
+        <p class="md:text-xl">Having all these servers running at full capacity will require not only lots of energy but also lots of water in order to keep the servers from overheating. More specifically fresh water is needed to cool them down due to salt water corroding the materials.</p>
       </div>
     </div>
   </div>
 </Layout>
 
 <style>
-h1{
-  /* font-size: 38px; */
-  font-weight: bold;
-  /* margin-top: 10px; */
-}
-h2{
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-hr{
-  color: white;
-  width: 90%;
-}
+/* h1{ */
+/*   /* font-size: 38px; */ */
+/*   font-weight: bold; */
+/*   /* margin-top: 10px; */ */
+/* } */
+/* h2{ */
+/*   font-size: 24px; */
+/*   font-weight: bold; */
+/*   margin-top: 10px; */
+/* } */
+/* hr{ */
+/*   color: white; */
+/*   width: 90%; */
+/* } */
 
 </style>
