@@ -6,3 +6,5 @@ export const NJArticle = "https://policylab.rutgers.edu/publication/electricity-
 export const IBMArticle = "https://www.ibm.com/think/topics/ai-data-center"
 export const graphArticle = "https://moneymoves.substack.com/p/whats-up-with-electricity-prices"
 export const centerArticle = "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/"
+export const waterArticle = "https://www.lincolninst.edu/publications/land-lines-magazine/articles/land-water-impacts-data-centers/#:~:text=%E2%80%9CEven%20if%20they%E2%80%99re,water%20quality%20issues."
+export const EESIArticle = "https://www.eesi.org/articles/view/data-centers-and-water-consumption#:~:text=A%C2%A0medium,size%2C%20and%20complexity."

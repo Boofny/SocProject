@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import {NJArticle, IBMArticle, graphArticle, centerArticle} from '../consts';
+import {NJArticle, IBMArticle, graphArticle, centerArticle, EESIArticle, waterArticle} from '../consts';
 import { Image } from 'astro:assets';
 import headerImage from '../assets/DataCenterHeader.jpg'
 import centerimage from '../assets/ArielDataCenter.jpg'
@@ -28,19 +28,21 @@ import graphImage from '../assets/GraphImage.webp'
     <div class="w-full flex justify-center">
       <div class="w-11/12 md:w-1/2 m-10 mt-10 text-lg">
         <h2 class="text-xl md:text-3xl font-header font-extrabold pb-2">What actually is an AI data center?</h1>
-        <p class="md:text-xl">AI data centers are described best by this <a href={IBMArticle} class="underline text-blue-800 font-bold italic" target="_blank" rel="noopener noreferrer">IBM article</a>, “a facility that houses the specific IT infrastructure needed to train, deploy and deliver AI applications and services.”. Large data centers like this have been popping up all around the U.S in mass.The biggest effect these centers have on the average person being the amount of energy they are consuming in order to operate.</p>
+        <p class="md:text-xl">AI data centers are described best by this <a href={IBMArticle} class="underline text-blue-800 font-bold " target="_blank" rel="noopener noreferrer">IBM article</a>, “a facility that houses the specific IT infrastructure needed to train, deploy and deliver AI applications and services.”. Large data centers like this have been popping up all around the U.S in mass.The biggest effect these centers have on the average person being the amount of energy they are consuming in order to operate.</p>
         <div class="flex justify-center">
           <Image class="rounded" src={centerimage} alt="centerimage"/>
         </div>
         <p class="wrap-break-word text-xs md:text-sm pt-2 flex flex-wrap justify-center text-center">Microsoft’s AI datacenter in Mt Pleasant, Wisconsin. Sep 18, 2025
         <a class="text-blue-800 ml-1 underline" href={centerArticle} target="_blank" rel="noopener noreferrer"> Scott Guthrie</a>
         </p>
-        <p class="md:text-xl">What does this mean for you? Well it means that if you happen to live in close proximity to an AI data center then you're in for some higher energy bills. According to the <a target="_blank" rel="noopener noreferrer" class="text-blue-800 font-bold italic underline" href={NJArticle}>New Jersey state policy lab </a>electricity bills have a potential to reach over $122 dollars or up to 40% more per month compared to 2020 before the big AI boom, but how does an AI center actually cause electricity prices to rise? Well in most city, rural and suburban areas the residence depends on something called the grid, which is responsible for distributing power to various outlets so you can use it at your leisure.</p>
+        <p class="md:text-xl">What does this mean for you? Well it means that if you happen to live in close proximity to an AI data center then you're in for some higher energy bills. According to the <a target="_blank" rel="noopener noreferrer" class="text-blue-800 font-bold underline" href={NJArticle}>New Jersey state policy lab </a>electricity bills have a potential to reach over $122 dollars or up to 40% more per month compared to 2020 before the big AI boom, but how does an AI center actually cause electricity prices to rise? Well in most city, rural and suburban areas the residence depends on something called the grid, which is responsible for distributing power to various outlets so you can use it at your leisure.</p>
         <p class="md:text-xl">Now if an AI data center is placed in your area then the ridiculous amount of energy needed to keep these centers operational means the demand for energy rises in your area causing the power plants to raise their prices in order to cover the amount of energy the AI data centers use.That in turn falls back on the average person making them pay more for their electricity bill despite not even doing anything to have it rise. Keep the lights off? Turn off your AC and live on as little power you can use? Doesn’t matter, the surging prices will still be felt even if you live fairly inexpensively.This price disparity is shown more clearly in the image bellow.</p>
         <h2 class="text-xl md:text-3xl font-bold font-header">Average rising price of electricity in the U.S.</h3>
         <Image class="my-5 shadow-xl rounded border" src={graphImage} alt="centerimage"/>
         <p class="whitespace-pre pt-2 text-sm flex justify-center"><a href={graphArticle} class="text-blue-800 underline" target="_blank" rel="noopener noreferrer">Alicia Adamczyk</a> (Sep 09, 2025)</p>
-        <p class="md:text-xl">Having all these servers running at full capacity will require not only lots of energy but also lots of water in order to keep the servers from overheating. More specifically fresh water is needed to cool them down due to salt water corroding the materials.</p>
+        <h2 class="text-xl md:text-3xl font-bold font-header">What about the water?</h3>
+        <p class="md:text-xl">Having all these servers running at full capacity will require not only lots of energy but also lots of water in order to keep the servers from overheating. More specifically, fresh water is needed to cool them down due to salt water corroding the materials.Despite data centers of all kinds requiring water in order to operate smoothly, fresh water being taken from lakes and natural streams has always been an issue that many have complained about.</p>
+        <p class="md:text-xl"> These complaints are only being amplified with the mass construction of AI data centers around the U.S, having to use up to five million gallons of water per day according to <a target="_blank" rel="noopener noreferrer" class="text-blue-800 font-bold underline" href={EESIArticle}>Environmental and Energy Study Institute.</a> Which is equivalent to the water use of a town with a population around 50,000 people.This means that smaller communities who have to live near one of these AI data centers will result in people paying more for the scarcity of water same as the energy use and reduce water quality due to high <a href={waterArticle} class="text-blue-800 font-bold underline" target="_blank" rel="noopener noreferrer">evaporation rates leaving behind concentrated chemicals</a> that end up in the areas water system.</p>
       </div>
     </div>
   </div>
