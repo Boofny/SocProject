@@ -8,3 +8,7 @@ export const graphArticle = "https://moneymoves.substack.com/p/whats-up-with-ele
 export const centerArticle = "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/"
 export const waterArticle = "https://www.lincolninst.edu/publications/land-lines-magazine/articles/land-water-impacts-data-centers/#:~:text=%E2%80%9CEven%20if%20they%E2%80%99re,water%20quality%20issues."
 export const EESIArticle = "https://www.eesi.org/articles/view/data-centers-and-water-consumption#:~:text=A%C2%A0medium,size%2C%20and%20complexity."
+
+export const NJBackLashArticle = "https://www.tomshardware.com/tech-industry/small-missouri-town-ousts-half-its-city-council-after-usd6-billion-ai-data-center-approval-petition-calls-for-mayors-removal-as-frustration-and-violence-over-ai-data-centers-mounts#:~:text=The%20situation%20in,the%20area%20permanently. "
+export const MissouriArticle = "https://www.tomshardware.com/tech-industry/small-missouri-town-ousts-half-its-city-council-after-usd6-billion-ai-data-center-approval-petition-calls-for-mayors-removal-as-frustration-and-violence-over-ai-data-centers-mounts#:~:text=The%20small%20town,reports%20Politico."
+export const TownHallImageLink = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/West_Hartford%2C_Connecticut_health_care_reform_town_hall_meeting%2C_2009-09-02.jpg/1280px-West_Hartford%2C_Connecticut_health_care_reform_town_hall_meeting%2C_2009-09-02.jpg "

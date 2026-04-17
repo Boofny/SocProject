@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import {NJArticle, IBMArticle, graphArticle, centerArticle, EESIArticle, waterArticle} from '../consts';
+import { NJBackLashArticle, TownHallImageLink, NJArticle, IBMArticle, graphArticle, centerArticle, EESIArticle, waterArticle, MissouriArticle} from '../consts';
 import { Image } from 'astro:assets';
 import headerImage from '../assets/DataCenterHeader.jpg'
 import centerimage from '../assets/ArielDataCenter.jpg'
 import graphImage from '../assets/GraphImage.webp'
+import townHall from '../assets/TownHall.jpg'
 ---
 
 <Layout>
@@ -43,7 +44,13 @@ import graphImage from '../assets/GraphImage.webp'
         <h2 class="text-xl md:text-3xl font-bold font-header pb-2">How water is being affected</h2>
         <p class="md:text-xl">Having all these servers running at full capacity will require not only lots of energy but also lots of water in order to keep the servers from overheating. More specifically, fresh water is needed to cool them down due to salt water corroding the materials. Despite data centers of all kinds requiring water in order to operate smoothly, fresh water being taken from lakes and natural streams has always been an issue that many have complained about.</p>
         <p class="md:text-xl"> These complaints are only being amplified with the mass construction of AI data centers around the U.S, having to use up to five million gallons of water per day according to <a target="_blank" rel="noopener noreferrer" class="text-blue-800 font-bold underline italic" href={EESIArticle}>Environmental and Energy Study Institute.</a> Which is equivalent to the water use of a town with a population around 50,000 people.This means that smaller communities who have to live near one of these AI data centers will result in people paying more for the scarcity of water same as the energy use, and reduced water quality due to high <a href={waterArticle} class="text-blue-800 font-bold underline italic" target="_blank" rel="noopener noreferrer">evaporation rates leaving behind concentrated chemicals</a> that end up in the areas water system.</p>
-        <h2 class="text-xl md:text-3xl font-bold font-header">What can the average person do about this?</h2>
+        <h2 class="text-xl md:text-3xl font-bold font-header pb-2">What can the average person do about this?</h2>
+        <p class="md:text-xl">While all this AI technology is innovative and will most likely become a standard tool in many fields, it comes at the cost of sustainability in local areas. So that begs the question, what can the average person actually do about these data centers? Well first of all, do more research and make sure that you are well informed and up to date on what is going on in your area/town regarding these centers.</p>
+        <p class="md:text-xl">Then with your acquired information, make your voice heard. If you know that a center is draining your area of resources and making you pay for it or if there are plans to construct one in your area then express your disapproval. More specifically express your disapproval in something like a town hall meeting.</p>
+        <Image class="mt-5 shadow-xl rounded border" src={townHall} alt="centerimage"/>
+        <p class="whitespace-pre pt-2 text-sm flex justify-center">A town hall meeting in <a href={TownHallImageLink} class="text-blue-800 underline" target="_blank" rel="noopener noreferrer">West Hartford, Connecticut</a></p>
+        <p class="md:text-xl">Let the people in charge know that you and your peers have zero interest in having a center built in your town raising bills and harming the local environment. Speaking out against intruding AI data centers has become a large priority in towns across America. For example the small town of about 14,000 people in <a target="_blank" rel="noopener noreferrer" class="text-blue-800 font-bold underline italic" href={MissouriArticle}>Festus, Missouri </a> an AI center was constructed despite public courage which led to half the city council being driven out from their positions.</p>
+        <p class="md:text-xl">In another example, the New Brunswick, <a href={NJBackLashArticle} class="text-blue-800 font-bold underline italic" target="_blank" rel="noopener noreferrer">New Jersey city council</a> was forced to stop a deal for a data center’s construction before it was too late due to public outrage. To sum it up, always stay informed and speak out with your community, power comes in numbers and with enough disapproval real change can be made.</p>
       </div>
     </div>
   </div>
